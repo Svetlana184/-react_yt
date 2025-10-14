@@ -1,6 +1,8 @@
 // import Props from './components/04_props/Props';
-import FetchDataWithUseEffect from './components/10_UseEffect/FetchDataWithUseEffect'
 
+import UpdateUser from './components/14_use_context/UpdateUser';
+import { UserProvider } from './components/14_use_context/UserContext';
+import UserProfile from './components/14_use_context/UserProfile';
 
 const App = () => {
   return (
@@ -9,7 +11,12 @@ const App = () => {
         <h1>Text</h1>
       </Props> */}
 
-      <FetchDataWithUseEffect/>
+      
+      <UserProvider>
+          <UserProfile/>
+          <UpdateUser/>
+      </UserProvider>
+
     </>
   )
 }
