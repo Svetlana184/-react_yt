@@ -1,8 +1,12 @@
 // import Props from './components/04_props/Props';
 
-import UpdateUser from './components/14_use_context/UpdateUser';
-import { UserProvider } from './components/14_use_context/UserContext';
-import UserProfile from './components/14_use_context/UserProfile';
+import Custom from './components/17_custom_hooks/Custom';
+import Example from './components/18_use_id/Example';
+
+
+// import UpdateUser from './components/14_use_context/UpdateUser';
+// import { UserProvider } from './components/14_use_context/UserContext';
+// import UserProfile from './components/14_use_context/UserProfile';
 
 const App = () => {
   return (
@@ -12,10 +16,12 @@ const App = () => {
       </Props> */}
 
       
-      <UserProvider>
+      {/* <UserProvider>
           <UserProfile/>
           <UpdateUser/>
-      </UserProvider>
+      </UserProvider> */}
+      <Example/>
+      
 
     </>
   )
